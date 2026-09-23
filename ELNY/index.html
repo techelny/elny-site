@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELNY Tecnologia | Sites profissionais e presença digital</title>
+  <meta name="description" content="A ELNY Tecnologia cria, mantém e evolui a presença digital de empresas. Sites profissionais, rápidos e seguros, com suporte contínuo. Solicite um orçamento.">
+  <link rel="canonical" href="https://elny.com.br/">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#2563EB">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://elny.com.br/">
+  <meta property="og:title" content="ELNY Tecnologia | Tecnologia que faz sua empresa evoluir">
+  <meta property="og:description" content="Criamos sites profissionais, rápidos e seguros, com suporte contínuo para sua empresa crescer na internet.">
+  <meta property="og:site_name" content="ELNY Tecnologia">
+  <meta property="og:image" content="https://elny.com.br/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ELNY Tecnologia | Tecnologia que faz sua empresa evoluir">
+  <meta name="twitter:description" content="Sites profissionais, rápidos e seguros, com suporte contínuo para sua empresa crescer na internet.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563EB'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial,sans-serif' font-size='28' font-weight='700' fill='white'%3EE%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ELNY Tecnologia",
+    "url": "https://elny.com.br",
+    "email": "contato@elny.com.br",
+    "description": "Empresa de tecnologia que constrói, mantém e evolui a presença digital de empresas.",
+    "areaServed": "BR",
+    "sameAs": []
+  }
+  </script>
+  <style>
+    :root {
+      --blue: #2563EB;
+      --cyan: #06B6D4;
+      --ink: #0B1020;
+      --white: #FFFFFF;
+      --mist: #F5F7FA;
+      --ice: #E8F1FF;
+      --muted: #5B6478;
+      --line: #E2E8F0;
+      --radius: 18px;
+      --shadow: 0 20px 50px rgba(11, 16, 32, 0.08);
+      --header: 76px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button, .btn { font-family: inherit; cursor: pointer; }
+    .container { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
+    .eyebrow {
+      font-family: Manrope, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      font-weight: 700;
+      color: var(--blue);
+      text-transform: uppercase;
+    }
+    h1, h2, h3, .logo-word { font-family: Manrope, sans-serif; }
+    h1 { font-size: clamp(2.1rem, 4.6vw, 3.6rem); line-height: 1.12; letter-spacing: -0.03em; }
+    h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); line-height: 1.2; letter-spacing: -0.03em; }
+    h3 { font-size: 1.15rem; }
+    .lead { color: var(--muted); font-size: 1.05rem; max-width: 58ch; }
+    .accent {
+      background: linear-gradient(90deg, var(--blue), var(--cyan));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 0;
+      border-radius: 999px;
+      padding: 13px 22px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--blue);
+      color: #fff;
+      box-shadow: 0 10px 24px rgba(37, 99, 235, .28);
+    }
+    .btn-primary:hover { background: #1d4ed8; }
+    .btn-ghost {
+      background: #fff;
+      color: var(--ink);
+      border: 1px solid var(--line);
+    }
+    .btn-whats {
+      background: #128C7E;
+      color: #fff;
+    }
+    .btn-whats:hover { background: #0f766a; }
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      height: var(--header);
+      background: rgba(255,255,255,.86);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(226,232,240,.8);
+    }
+    .header-inner {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; }
+    .mark {
+      width: 36px; height: 36px; border-radius: 10px;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      color: #fff; display: grid; place-items: center;
+      font-family: Manrope, sans-serif; font-weight: 800; font-size: 16px;
+    }
+    .logo-word { font-weight: 800; letter-spacing: .04em; line-height: 1; }
+    .logo-sub { display: block; font-size: 9px; letter-spacing: .22em; color: var(--muted); font-weight: 700; }
+    .nav { display: flex; gap: 22px; align-items: center; }
+    .nav a { font-size: .92rem; color: #334155; font-weight: 500; }
+    .nav a:hover { color: var(--blue); }
+    .header-actions { display: flex; align-items: center; gap: 12px; }
+    .menu-toggle {
+      display: none; width: 42px; height: 42px; border: 1px solid var(--line);
+      border-radius: 12px; background: #fff;
+    }
+    .hero { padding: 48px 0 28px; }
+    .hero-grid {
+      display: grid; grid-template-columns: 1.05fr .95fr; gap: 48px; align-items: center;
+    }
+    .hero p.lead { margin: 18px 0 28px; }
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+    .device-stage {
+      position: relative; min-height: 420px;
+      background: radial-gradient(circle at 30% 20%, #E8F1FF, #F5F7FA 55%, #fff);
+      border: 1px solid var(--line); border-radius: 28px; padding: 28px;
+      box-shadow: var(--shadow);
+    }
+    .laptop, .phone {
+      background: #fff; border: 1px solid var(--line); overflow: hidden;
+      box-shadow: 0 16px 40px rgba(11,16,32,.1);
+    }
+    .laptop { border-radius: 16px 16px 8px 8px; width: 86%; }
+    .laptop-bar { height: 28px; background: #F8FAFC; border-bottom: 1px solid var(--line); display: flex; align-items: center; gap: 6px; padding: 0 12px; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: #CBD5E1; }
+    .site-ui { padding: 14px; }
+    .ui-nav { height: 10px; width: 48%; background: #E8F1FF; border-radius: 99px; margin-bottom: 12px; }
+    .ui-hero { height: 86px; border-radius: 12px; background: linear-gradient(135deg, #2563EB, #06B6D4); margin-bottom: 10px; }
+    .ui-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+    .ui-card { height: 42px; background: var(--mist); border-radius: 8px; }
+    .phone {
+      position: absolute; right: 22px; bottom: 22px; width: 128px; border-radius: 22px; padding: 10px 8px 12px;
+    }
+    .phone-notch { width: 42px; height: 6px; background: #E2E8F0; border-radius: 99px; margin: 0 auto 8px; }
+    .float-tag {
+      position: absolute; background: #fff; border: 1px solid var(--line); border-radius: 999px;
+      padding: 8px 12px; font-size: 12px; font-weight: 600; box-shadow: var(--shadow);
+      animation: float 5s ease-in-out infinite;
+    }
+    .t1 { top: 18px; left: 18px; }
+    .t2 { top: 78px; right: 18px; animation-delay: .6s; }
+    .t3 { bottom: 92px; left: 12px; animation-delay: 1.2s; }
+    .t4 { bottom: 18px; left: 36%; animation-delay: 1.8s; }
+    @keyframes float { 50% { transform: translateY(-6px); } }
+    .benefits {
+      margin: 20px auto 10px; background: var(--ink); color: #fff; border-radius: 24px; padding: 28px;
+      display: grid; grid-template-columns: repeat(4, 1fr) auto; gap: 18px; align-items: center;
+    }
+    .benefit h3 { font-size: 1rem; margin-bottom: 4px; }
+    .benefit p { color: #B7C0D4; font-size: .88rem; }
+    .benefits-note { max-width: 140px; font-size: .85rem; color: #7DD3FC; font-weight: 600; }
+    section { padding: 84px 0; }
+    .section-head { max-width: 640px; margin-bottom: 40px; }
+    .section-head h2 { margin: 8px 0 12px; }
+    .cards-4, .cards-3 { display: grid; gap: 18px; }
+    .cards-4 { grid-template-columns: repeat(4, 1fr); }
+    .cards-3 { grid-template-columns: repeat(3, 1fr); }
+    .card {
+      background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 22px;
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .icon {
+      width: 42px; height: 42px; border-radius: 12px; background: var(--ice); color: var(--blue);
+      display: grid; place-items: center; margin-bottom: 16px;
+    }
+    .card p { color: var(--muted); margin: 8px 0 16px; font-size: .95rem; }
+    .link { color: var(--blue); font-weight: 600; font-size: .92rem; }
+    .projects { background: var(--mist); }
+    .project-img {
+      height: 180px; border-radius: 12px; margin-bottom: 16px;
+      background: linear-gradient(135deg, #dbeafe, #fff);
+      position: relative; overflow: hidden;
+    }
+    .project-img::after {
+      content: ""; position: absolute; inset: 24px 18px auto; height: 70%;
+      background: #fff; border-radius: 10px; box-shadow: var(--shadow);
+    }
+    .p2 { background: linear-gradient(135deg, #e0f2fe, #f8fafc); }
+    .p3 { background: linear-gradient(135deg, #ccfbf1, #f8fafc); }
+    .tag { font-size: 12px; color: var(--blue); font-weight: 600; }
+    .demo-note { font-size: 12px; color: #94a3b8; margin-top: 6px; }
+    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; position: relative; }
+    .step { position: relative; }
+    .num {
+      font-family: Manrope, sans-serif; font-size: 2.4rem; font-weight: 800; color: var(--ice); line-height: 1;
+      margin-bottom: 10px;
+    }
+    .why { background: var(--ice); }
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .plans .card.featured { border-color: var(--blue); box-shadow: var(--shadow); }
+    .plan-list { list-style: none; color: var(--muted); margin: 14px 0 22px; }
+    .plan-list li { padding: 6px 0 6px 18px; position: relative; }
+    .plan-list li::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--cyan); position: absolute; left: 0; top: 13px; }
+    .about-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; }
+    .about-panel {
+      background: linear-gradient(160deg, var(--ink), #162036); color: #fff; border-radius: 28px; padding: 36px;
+      min-height: 280px;
+    }
+    .about-panel p { color: #B7C0D4; margin-top: 12px; }
+    .faq details {
+      border-bottom: 1px solid var(--line); padding: 16px 0;
+    }
+    .faq summary {
+      cursor: pointer;
+      font-weight: 600;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq-icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      display: grid;
+      place-items: center;
+      color: var(--blue);
+      transition: transform .25s ease, background .25s ease;
+    }
+    .faq details[open] .faq-icon { transform: rotate(180deg); background: var(--ice); }
+    .faq details p { color: var(--muted); margin-top: 10px; padding-right: 44px; }
+    .cta {
+      background: var(--ink); color: #fff; border-radius: 28px; padding: 64px 40px; text-align: center; position: relative;
+    }
+    .cta p { color: #B7C0D4; margin: 14px auto 28px; max-width: 52ch; }
+    .hand { font-family: Georgia, serif; font-style: italic; color: #7DD3FC; margin-top: 22px; }
+    .footer { background: #070b16; color: #cbd5e1; padding: 48px 0 24px; }
+    .footer-grid { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; flex-wrap: wrap; }
+    .footer a:hover { color: #fff; }
+    .footer-bottom { margin-top: 32px; padding-top: 18px; border-top: 1px solid #1e293b; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: .85rem; }
+    .reveal { opacity: 0; transform: translateY(16px); animation: reveal .7s ease forwards; }
+    @keyframes reveal { to { opacity: 1; transform: none; } }
+    .mobile-nav {
+      display: none; position: fixed; inset: var(--header) 16px auto; background: #fff; border: 1px solid var(--line);
+      border-radius: 16px; padding: 16px; z-index: 40; box-shadow: var(--shadow);
+    }
+    .mobile-nav a { display: block; padding: 10px 6px; }
+    .mobile-nav.open { display: block; }
+    .wa-fab {
+      position: fixed; right: 18px; bottom: 18px; z-index: 40;
+      width: 54px; height: 54px; border-radius: 50%; background: #25D366; color: #fff;
+      display: none; place-items: center; box-shadow: 0 10px 24px rgba(37,211,102,.35);
+    }
+    dialog { border: 0; border-radius: 20px; padding: 28px; width: min(460px, 92vw); }
+    dialog::backdrop { background: rgba(11,16,32,.45); }
+    form { display: grid; gap: 12px; }
+    input, textarea, select {
+      width: 100%; border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; font: inherit;
+    }
+    @media (max-width: 980px) {
+      .nav { display: none; }
+      .menu-toggle { display: grid; place-items: center; }
+      .hero-grid, .about-grid, .why-grid, .cards-4, .cards-3, .steps, .benefits { grid-template-columns: 1fr; }
+      .benefits { padding: 22px; }
+      .wa-fab { display: grid; }
+      .header .btn-whats span { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="ELNY Tecnologia">
+        <span class="mark" aria-hidden="true">E</span>
+        <span>
+          <strong class="logo-word">ELNY</strong>
+          <span class="logo-sub">TECNOLOGIA</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-whats" href="#contato" data-whatsapp>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 2.1 17.2L1 23l5.9-1.1A11 11 0 0 0 20.5 3.5zm-8.5 17a9 9 0 0 1-4.6-1.3l-.3-.2-3.5.7.7-3.4-.2-.3A9 9 0 1 1 12 20.5zm5-6.7c-.3-.1-1.6-.8-1.8-.9s-.4-.1-.6.1-.7.9-.8 1-.3.2-.6.1a7.4 7.4 0 0 1-2.2-1.4 8.2 8.2 0 0 1-1.5-1.9c-.2-.3 0-.4.1-.6l.4-.5.1-.3a.5.5 0 0 0 0-.5c0-.1-.6-1.4-.8-1.9s-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.5 4 15 15 0 0 0 1.5.6 3.6 3.6 0 0 0 1.6.1 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3z"/></svg>
+          <span>Falar no WhatsApp</span>
+        </a>
+        <button class="menu-toggle" aria-label="Abrir menu" id="menuBtn">☰</button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#inicio">Início</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </div>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <p class="eyebrow">Tecnologia que faz sua empresa evoluir</p>
+          <h1>Seu negócio merece uma presença digital <span class="accent">à altura.</span></h1>
+          <p class="lead">Criamos sites profissionais, rápidos e seguros, com suporte contínuo para sua empresa crescer na internet.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#contato">Criar meu site</a>
+            <a class="btn btn-ghost" href="#sobre">Conhecer a ELNY</a>
+          </div>
+        </div>
+        <div class="device-stage reveal" aria-hidden="true">
+          <div class="laptop">
+            <div class="laptop-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+            <div class="site-ui">
+              <div class="ui-nav"></div>
+              <div class="ui-hero"></div>
+              <div class="ui-row"><div class="ui-card"></div><div class="ui-card"></div><div class="ui-card"></div></div>
+            </div>
+          </div>
+          <div class="phone">
+            <div class="phone-notch"></div>
+            <div class="ui-hero" style="height:70px"></div>
+            <div class="ui-card" style="margin-top:8px"></div>
+            <div class="ui-card" style="margin-top:8px"></div>
+          </div>
+          <span class="float-tag t1">Sites modernos.</span>
+          <span class="float-tag t2">Rápidos.</span>
+          <span class="float-tag t3">Responsivos.</span>
+          <span class="float-tag t4">Preparados para gerar resultados.</span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="benefits">
+          <div class="benefit"><h3>Sites rápidos</h3><p>Melhor experiência para seus clientes.</p></div>
+          <div class="benefit"><h3>Mais segurança</h3><p>Seu site sempre protegido.</p></div>
+          <div class="benefit"><h3>Suporte contínuo</h3><p>Conte com a gente no dia a dia.</p></div>
+          <div class="benefit"><h3>Soluções sob medida</h3><p>Para empresas e profissionais.</p></div>
+          <p class="benefits-note">Mais que sites. Soluções para o seu futuro.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">O que fazemos</p>
+          <h2>Soluções digitais para sua empresa</h2>
+          <p class="lead">Da criação à manutenção, oferecemos tudo o que você precisa para ter uma presença digital profissional e eficiente.</p>
+        </div>
+        <div class="cards-4">
+          <article class="card">
+            <div class="icon">▣</div>
+            <h3>Criação de Sites</h3>
+            <p>Sites modernos, responsivos e personalizados para sua empresa ou projeto.</p>
+            <a class="link" href="#contato">Saiba mais →</a>
+          </article>
+          <article class="card">
+            <div class="icon">↻</div>
+            <h3>Manutenção</h3>
+            <p>Atualizações, correções, backup e suporte contínuo para seu site.</p>
+            <a class="link" href="#planos">Saiba mais →</a>
+          </article>
+          <article class="card">
+            <div class="icon">☁</div>
+            <h3>Hospedagem</h3>
+            <p>Infraestrutura segura e de alta performance para manter seu site sempre disponível.</p>
+            <a class="link" href="#contato">Saiba mais →</a>
+          </article>
+          <article class="card">
+            <div class="icon">↗</div>
+            <h3>Evolução</h3>
+            <p>Novas páginas, integrações e melhorias conforme sua empresa cresce.</p>
+            <a class="link" href="#contato">Saiba mais →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projetos">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Nossos projetos</p>
+          <h2>Sites que geram resultados</h2>
+          <p class="lead">Conheça alguns projetos demonstrativos e veja o tipo de presença digital que a ELNY constrói para diferentes segmentos.</p>
+        </div>
+        <div class="cards-3">
+          <article class="card">
+            <div class="project-img" role="img" aria-label="Prévia demonstrativa do site institucional Clínica Saúde+"></div>
+            <p class="tag">Site institucional</p>
+            <h3>Clínica Saúde+</h3>
+            <p>Presença digital clara para uma clínica, com foco em confiança, agendamento e informação.</p>
+            <p class="demo-note">Projeto demonstrativo</p>
+            <a class="link" href="#contato">Visualizar o projeto →</a>
+          </article>
+          <article class="card">
+            <div class="project-img p2" role="img" aria-label="Prévia demonstrativa do site institucional Construtora Horizonte"></div>
+            <p class="tag">Site institucional</p>
+            <h3>Construtora Horizonte</h3>
+            <p>Interface sóbria para apresentar empreendimentos, diferenciais e contato comercial.</p>
+            <p class="demo-note">Projeto demonstrativo</p>
+            <a class="link" href="#contato">Visualizar o projeto →</a>
+          </article>
+          <article class="card">
+            <div class="project-img p3" role="img" aria-label="Prévia demonstrativa do site institucional Sabor da Terra"></div>
+            <p class="tag">Site institucional</p>
+            <h3>Sabor da Terra</h3>
+            <p>Identidade acolhedora para um negócio gastronômico, com destaque para cardápio e conversão.</p>
+            <p class="demo-note">Projeto demonstrativo</p>
+            <a class="link" href="#contato">Visualizar o projeto →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-funciona">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Como funciona</p>
+          <h2>Do planejamento ao sucesso</h2>
+          <p class="lead">Um processo simples, transparente e eficiente.</p>
+        </div>
+        <div class="steps">
+          <div class="step"><div class="num">01</div><h3>Conversamos</h3><p class="lead">Entendemos sua empresa, objetivos e necessidades.</p></div>
+          <div class="step"><div class="num">02</div><h3>Desenvolvemos</h3><p class="lead">Criamos o layout e desenvolvemos o site.</p></div>
+          <div class="step"><div class="num">03</div><h3>Publicamos</h3><p class="lead">Configuramos tudo e colocamos o site no ar.</p></div>
+          <div class="step"><div class="num">04</div><h3>Mantemos</h3><p class="lead">Oferecemos suporte contínuo para o site evoluir.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why" id="por-que">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Por que ELNY?</p>
+          <h2>Tecnologia sem complicação.</h2>
+        </div>
+        <div class="why-grid">
+          <article class="card"><h3>Atendimento próximo</h3><p>Fale com pessoas que realmente acompanham seu projeto.</p></article>
+          <article class="card"><h3>Design profissional</h3><p>Interfaces modernas pensadas para transmitir credibilidade.</p></article>
+          <article class="card"><h3>Experiência em dispositivos</h3><p>Sites preparados para computadores, tablets e celulares.</p></article>
+          <article class="card"><h3>Estrutura preparada para crescer</h3><p>Seu projeto pode começar pequeno e evoluir conforme sua empresa cresce.</p></article>
+          <article class="card"><h3>Suporte contínuo</h3><p>A relação não termina quando o site entra no ar.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="plans" id="planos">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Planos</p>
+          <h2>Escolha a estrutura ideal para sua empresa</h2>
+          <p class="lead">Manutenção e novos desenvolvimentos podem ser contratados separadamente. Os valores são definidos sob orçamento, de acordo com o escopo do projeto.</p>
+        </div>
+        <div class="cards-3">
+          <article class="card">
+            <h3>Site Essencial</h3>
+            <p>Para profissionais e pequenos negócios.</p>
+            <ul class="plan-list">
+              <li>Site institucional enxuto</li>
+              <li>Responsivo e rápido</li>
+              <li>Formulário de contato</li>
+            </ul>
+            <a class="btn btn-ghost" href="#contato">Solicitar orçamento</a>
+          </article>
+          <article class="card featured">
+            <h3>Site Profissional</h3>
+            <p>Para empresas que precisam de uma presença digital mais completa.</p>
+            <ul class="plan-list">
+              <li>Estrutura institucional completa</li>
+              <li>Páginas de serviços e conversão</li>
+              <li>Base técnica para SEO</li>
+            </ul>
+            <a class="btn btn-primary" href="#contato">Solicitar orçamento</a>
+          </article>
+          <article class="card">
+            <h3>Manutenção ELNY</h3>
+            <p>Para quem quer deixar o site sempre atualizado, seguro e funcionando corretamente.</p>
+            <ul class="plan-list">
+              <li>Atualizações e correções</li>
+              <li>Backup e acompanhamento</li>
+              <li>Evoluções sob demanda</li>
+            </ul>
+            <a class="btn btn-ghost" href="#contato">Solicitar orçamento</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">Sobre a ELNY</p>
+          <h2>Tecnologia que faz sua empresa evoluir.</h2>
+          <p class="lead" style="margin-top:16px">A ELNY nasceu com um objetivo simples: ajudar empresas a construir uma presença digital profissional, eficiente e preparada para crescer.</p>
+          <p class="lead" style="margin-top:12px">Começamos especializados em criação e manutenção de sites profissionais. A visão, no entanto, é mais ampla: hospedagem, SEO, analytics, landing pages, integrações, portais e plataformas web — sempre com a mesma ideia: tecnologia simples por fora, sofisticada por dentro.</p>
+        </div>
+        <aside class="about-panel">
+          <p class="eyebrow" style="color:#7DD3FC">ELNY — Tecnologia que faz sua empresa evoluir.</p>
+          <h3 style="margin-top:16px;font-size:1.6rem">Construímos, mantemos e evoluímos a presença digital dos nossos clientes.</h3>
+          <p>Para pequenas e médias empresas, profissionais liberais e organizações que precisam de uma presença digital à altura.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2>Perguntas frequentes</h2>
+        </div>
+        <details open>
+          <summary>Por que toda empresa precisa de um site profissional? <span class="faq-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+          <p>Um site profissional é o canal próprio da empresa: transmite credibilidade, organiza a informação e permite que o cliente encontre você com clareza, a qualquer hora, em qualquer dispositivo.</p>
+        </details>
+        <details>
+          <summary>Quanto custa criar um site? <span class="faq-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+          <p>O investimento varia conforme páginas, funcionalidades e nível de personalização. Trabalhamos com orçamento sob medida, sem valores padronizados nesta página.</p>
+        </details>
+        <details>
+          <summary>Quanto tempo demora para o site ficar pronto? <span class="faq-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+          <p>O prazo depende do escopo e da agilidade nas aprovações. Projetos institucionais costumam seguir um fluxo claro: conversa, desenvolvimento, publicação e manutenção.</p>
+        </details>
+        <details>
+          <summary>O site funciona no celular? <span class="faq-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+          <p>Sim. Todos os projetos são pensados para computador, tablet e smartphone, com leitura confortável e botões fáceis de tocar.</p>
+        </details>
+        <details>
+          <summary>Vocês cuidam da hospedagem? <span class="faq-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+          <p>Sim. Podemos indicar e estruturar a hospedagem para o site ficar estável, seguro e disponível. Esse serviço pode ser contratado junto ou separadamente.</p>
+        </details>
+        <details>
+          <summary>Vocês fazem manutenção depois da entrega? <span class="faq-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+          <p>Sim. A Manutenção ELNY cobre atualizações, correções, backup e acompanhamento. Novos desenvolvimentos podem ser contratados à parte.</p>
+        </details>
+        <details>
+          <summary>Posso solicitar alterações depois que o site estiver pronto? <span class="faq-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+          <p>Pode. Ajustes pontuais e evoluções fazem parte da relação contínua com a ELNY, combinados conforme a necessidade.</p>
+        </details>
+        <details>
+          <summary>É possível adicionar novas funcionalidades no futuro? <span class="faq-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+          <p>Sim. Os projetos são estruturados para crescer: novas páginas, integrações, automações e melhorias de conversão.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container">
+        <div class="cta">
+          <h2>Vamos criar o próximo capítulo da sua empresa?</h2>
+          <p>Fale com a ELNY e descubra como a tecnologia pode levar seu negócio mais longe. Estamos prontos para ajudar.</p>
+          <div class="hero-ctas" style="justify-content:center">
+            <a class="btn btn-whats" href="mailto:contato@elny.com.br" data-whatsapp>Falar no WhatsApp</a>
+            <button class="btn btn-primary" id="openForm">Solicitar orçamento</button>
+          </div>
+          <p class="hand">Tecnologia de pessoas para pessoas.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <a class="brand" href="#inicio"><span class="mark">E</span><span><strong class="logo-word" style="color:#fff">ELNY</strong><span class="logo-sub">TECNOLOGIA</span></span></a>
+      <div>
+        <h3 style="color:#fff;margin-bottom:10px">Contato</h3>
+        <p><a href="mailto:contato@elny.com.br">contato@elny.com.br</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© ELNY Tecnologia. Todos os direitos reservados.</p>
+      <p><a href="#privacidade">Política de Privacidade</a> · <a href="#termos">Termos de Uso</a></p>
+    </div>
+  </footer>
+
+  <a class="wa-fab" href="mailto:contato@elny.com.br" data-whatsapp aria-label="Falar no WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 2.1 17.2L1 23l5.9-1.1A11 11 0 0 0 20.5 3.5z"/></svg>
+  </a>
+
+  <dialog id="formDialog" aria-labelledby="formTitle">
+    <h3 id="formTitle">Solicitar orçamento</h3>
+    <p class="lead" style="margin:8px 0 16px">Conte um pouco do que você precisa. Retornamos pelo e-mail informado.</p>
+    <form id="leadForm">
+      <input name="nome" required placeholder="Nome" autocomplete="name">
+      <input type="email" name="email" required placeholder="E-mail" autocomplete="email">
+      <input name="empresa" placeholder="Empresa">
+      <select name="interesse">
+        <option value="site">Criação de site</option>
+        <option value="manutencao">Manutenção</option>
+        <option value="hospedagem">Hospedagem</option>
+        <option value="evolucao">Evolução do site atual</option>
+      </select>
+      <textarea name="mensagem" rows="4" placeholder="Como podemos ajudar?"></textarea>
+      <button class="btn btn-primary" type="submit">Enviar pedido</button>
+      <button class="btn btn-ghost" type="button" id="closeForm">Fechar</button>
+    </form>
+  </dialog>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    menuBtn.addEventListener('click', () => mobileNav.classList.toggle('open'));
+    mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileNav.classList.remove('open')));
+
+    const dialog = document.getElementById('formDialog');
+    document.getElementById('openForm').addEventListener('click', () => dialog.showModal());
+    document.getElementById('closeForm').addEventListener('click', () => dialog.close());
+    document.getElementById('leadForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = new FormData(e.target);
+      const body = encodeURIComponent(
+        `Olá, ELNY. Meu nome é ${data.get('nome')}. Empresa: ${data.get('empresa') || '-'}. Interesse: ${data.get('interesse')}. ${data.get('mensagem') || ''}`
+      );
+      window.location.href = `mailto:contato@elny.com.br?subject=Orçamento%20ELNY&body=${body}`;
+    });
+
+    const WHATSAPP_NUMBER = '';
+    document.querySelectorAll('[data-whatsapp]').forEach((el) => {
+      el.addEventListener('click', (ev) => {
+        if (!WHATSAPP_NUMBER) return;
+        ev.preventDefault();
+        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Olá, ELNY. Gostaria de conversar sobre um site profissional.')}`, '_blank');
+      });
+    });
+  </script>
+</body>
+</html>
